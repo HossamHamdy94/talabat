@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.myapplication.ListItem" />
+
+    </data>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/itemImageview"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:paddingRight="25sp"
+            android:src="@drawable/type_car" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عنوان المساعده"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/date"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:src="@drawable/my_list_help_accepted_time" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantNameTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="الوقت"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/genderimageview"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:src="@drawable/my_list_help_accepted_info_attendance" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantNameTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="النوع"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/fazaimageview"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:src="@drawable/my_list_help_accepted_info_help_type" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/restaurantNameTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="نوع الفزعه"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/numberimageview"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:src="@drawable/my_list_help_accepted_accept" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:paddingBottom="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantNameTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="عدد المساعدين"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/mybutton"
+                android:text="الغاء"
+                android:textColor="#9C61F1"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:strokeColor="#AC73FF"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
